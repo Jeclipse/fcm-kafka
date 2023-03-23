@@ -71,7 +71,7 @@ public class TopicRegistrationController {
     }
     
     @GetMapping
-    public ResponseEntity<APIResponse<List<TopicResponseDTO>>> getProducts() {
+    public ResponseEntity<APIResponse<List<TopicResponseDTO>>> getTokens() {
 
         List<TopicResponseDTO> tokens = registrationTokenService.getTokens();
         //Builder Design pattern (to avoid complex object creation headache)
