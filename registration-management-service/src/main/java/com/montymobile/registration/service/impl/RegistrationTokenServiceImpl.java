@@ -56,7 +56,7 @@ public class RegistrationTokenServiceImpl implements RegistrationTokenService {
     	TopicResponseDTO topicResponseDTO;
 
         try {
-            log.info("RegistrationTokenService:createNewTopic execution started.");
+            log.info("RegistrationTokenService:unsubscribeTopic execution started.");
             
             // Check if a token with the same topic already exists
             Optional<RegistrationToken> existingTokenOptional = tokenRepository.findByTopicAndToken(topicRequestDTO.getTopicName(), topicRequestDTO.getToken());
